@@ -13,6 +13,7 @@ void initServo(int pin) {
 }
 
 void openGate() {
+    Serial.println("openGate called");
     gateServo.write(90); // Mở cổng
     gateOpenMillis = millis();
     gateIsOpen = true;
